@@ -1,19 +1,34 @@
 <html>
   <head>
     <link rel="stylesheet" href="res/master.css">
+    <link rel="stylesheet" href="res/fonts/raleway.css">
+    
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f1.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f2.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f3.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f4.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f5.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f6.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f7.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f8.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f9.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f10.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f11.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f12.ttf">
+    
     <script src="res/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   </head>
   
   <body>
-    <div id="box">R R R R R R R R R R R R R R R R R R R R R R </div>
+    <div id="box">R</div>
     <script type="text/javascript" charset="utf-8">
     function drawAlphabet(n,t){
       if (n==13) return false;
-      $("#box").css("font-family", "Bhaukal" + n);
+      $("#box").css("font-family", "Raleway-f" + n);
       $("#box").css("opacity", (n * (100/12)) / 100);
       var t = setTimeout(function(){drawAlphabet(n+1);},62)
     }
-    $(document).ready(function(){
+    $(document).onload(function(){
       var t = setTimeout(function(){drawAlphabet(1);}, 62)
     });
     </script>
