@@ -1,0 +1,17 @@
+body{
+  text-align: center;
+  font: 300px "Helvetica Neue";
+}
+
+.one {
+  font-family: "BhaukalOne";
+}
+.two {
+  font-family: "BhaukalTwo";
+}
+.three {
+  font-family: "BhaukalThree";
+}
+.four {
+  font-family: "BhaukalFour";
+}

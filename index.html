@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="res/master.css">
+    <script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  
+  <body>
+    <div id="bh" class="one">EEEEEEE</div>
+    <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $("#bh").addClass("one").delay(200).queue(function(next){
+          $(this).addClass("two").delay(200).queue(function(next2){
+            $(this).addClass("three").delay(200).queue(function(next3){
+              $(this).addClass("four")
+              next3();
+            })
+            next2();
+          });
+          next();
+      });
+    })
+    </script>
+  </body>
+</html>
