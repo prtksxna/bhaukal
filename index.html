@@ -1,24 +1,21 @@
 <html>
   <head>
     <link rel="stylesheet" href="res/master.css">
-    <script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="res/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   </head>
   
   <body>
-    <div id="bh" class="one">EEEEEEE</div>
+    <div id="box">R</div>
     <script type="text/javascript" charset="utf-8">
+    function drawAlphabet(n,t){
+      if (n==13) return false;
+      $("#box").css("font-family", "Bhaukal" + n);
+      $("#box").css("opacity", (n * (100/12)) / 100);
+      var t = setTimeout(function(){drawAlphabet(n+1);},62)
+    }
     $(document).ready(function(){
-      $("#bh").addClass("one").delay(200).queue(function(next){
-          $(this).addClass("two").delay(200).queue(function(next2){
-            $(this).addClass("three").delay(200).queue(function(next3){
-              $(this).addClass("four")
-              next3();
-            })
-            next2();
-          });
-          next();
-      });
-    })
+      var t = setTimeout(function(){drawAlphabet(1);}, 62)
+    });
     </script>
   </body>
 </html>
