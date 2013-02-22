@@ -15,21 +15,33 @@
     <link rel="prefetch" href="res/fonts/frames/Raleway-f10.ttf">
     <link rel="prefetch" href="res/fonts/frames/Raleway-f11.ttf">
     <link rel="prefetch" href="res/fonts/frames/Raleway-f12.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f13.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f14.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f15.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f16.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f17.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f18.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f19.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f20.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f21.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f22.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f23.ttf">
+    <link rel="prefetch" href="res/fonts/frames/Raleway-f24.ttf">
 
     <script src="res/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   </head>
 
   <body>
-    <div id="box">I  O  V</div>
+    <div id="box">Q W E R T Y U I O P A S D F G H J K L Z X C V B N M</div>
     <script type="text/javascript" charset="utf-8">
     function drawAlphabet(n,t){
-      if (n==13) return false;
+      if (n==25) return false;
       $("#box").css("font-family", "Raleway-f" + n);
       $("#box").css("opacity", (n * (100/12)) / 100);
-      var t = setTimeout(function(){drawAlphabet(n+1);},62)
+      var t = setTimeout(function(){drawAlphabet(n+1);},32)
     }
     $(document).ready(function(){
-      var t = setTimeout(function(){drawAlphabet(1);}, 62)
+      var t = setTimeout(function(){drawAlphabet(1);}, 32)
     });
     </script>
   </body>
