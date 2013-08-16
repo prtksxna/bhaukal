@@ -66,7 +66,7 @@ header p span{
     display: block;
     margin: 0 auto;
     font-family: Monaco, MonacoRegular, 'Courier New', monospace;
-    font-size: 10px;
+    font-size: 12px;
     font-smooth: never;
     font-weight: none;
     -webkit-font-smoothing: none;
@@ -82,7 +82,7 @@ header p span{
     background: #C5C8C6;
     padding: 5px;
     border-radius: 3px;
-    font-size: 12px;
+    font-size: 14px;
     width: 100px;
     text-align: center;
     border-bottom: 2px solid #828482;
