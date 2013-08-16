@@ -81,13 +81,23 @@ header p span{
     display: block;
     background: #C5C8C6;
     padding: 5px;
-    border-radius: 3px;
+    border-radius: 7px;
     font-size: 14px;
     width: 100px;
     text-align: center;
-    border-bottom: 2px solid #828482;
+    border-bottom: 4px solid #828482;
     color: #27292C;
     text-decoration: none;
+}
+
+.code a.run:hover{
+    border-bottom: 3px solid #828482;
+    padding-top: 6px;
+}
+
+.code a.run:active{
+    border-bottom: 1px solid #828482;
+    padding-top: 8px;
 }
 
 .demo{
