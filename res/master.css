@@ -1,6 +1,123 @@
 body{
-  text-align: center;
-  padding-top: 100px;
-  font: 120px "Raleway-f1";
-  font-weight: 100;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+    background: #C5C8C6;
+}
+
+header{
+    margin: 0;
+    text-align: center;
+    background: #27292C;
+    border-bottom: 5px solid #81a2be;
+}
+
+header h1{
+    display: block;
+    width: 555px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: left;
+    font-size: 100px;
+    font-weight: 100;
+    color: #C5C8C6;
+}
+
+header p{
+    display: block;
+    width: 555px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #8abeb7;
+}
+
+header p span{
+    color: #b294bb;
+}
+
+#frames{
+    display: block;
+    width: 555px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 20px;
+}
+
+#frames span{
+    display: block;
+    margin-left: 10px;
+    margin-top: -2px;
+    font-size: 30px;
+    color: #27292C;
+}
+
+.code{
+    background: #27292C;
+    color: #C5C8C6;
+}
+
+.code code{
+    width: 555px;
+    display: block;
+    margin: 0 auto;
+    font-family: Monaco, MonacoRegular, 'Courier New', monospace;
+    font-size: 10px;
+    font-smooth: never;
+    font-weight: none;
+    -webkit-font-smoothing: none;
+}
+
+.code code .crayon-pre{
+    margin-left: 10px;
+}
+
+.code a.run{
+    margin-left: 10px;
+    display: block;
+    background: #C5C8C6;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+    border-bottom: 2px solid #050505;
+    color: #27292C;
+    text-decoration: none;
+}
+
+.demo{
+    width: 555px;
+    margin: 0 auto;
+    font-size: 200px;
+    line-height: 250px;
+    height: 250px;
+    color: #27292C;
+}
+
+footer{
+    background: #35383C;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #C5C8C6;
+}
+
+footer span{
+    color: #8abeb7;
+}
+
+footer p{
+    width: 545px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer a{
+    color: #b294bb;
+    text-decoration: none;
 }

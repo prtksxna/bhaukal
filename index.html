@@ -1,48 +1,112 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="res/master.css">
-    <link rel="stylesheet" href="fonts/raleway/raleway.css">
+    <head>
+        <title>Bhaukal</title>
 
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f1.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f2.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f3.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f4.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f5.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f6.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f7.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f8.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f9.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f10.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f11.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f12.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f13.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f14.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f15.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f16.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f17.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f18.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f19.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f20.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f21.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f22.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f23.ttf">
-    <link rel="prefetch" href="fonts/raleway/frames/Raleway-f24.ttf">
+        <link rel="stylesheet" href="res/master.css">
+        <link rel="stylesheet" href="res/tomorrow-night.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="fonts/raleway/raleway.css">
 
-    <script src="lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-  </head>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,100' rel='stylesheet' type='text/css'>
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f1.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f2.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f3.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f4.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f5.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f6.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f7.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f8.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f9.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f10.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f11.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f12.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f13.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f14.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f15.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f16.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f17.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f18.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f19.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f20.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f21.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f22.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f23.ttf">
+        <link rel="prefetch" href="fonts/raleway/frames/Raleway-f24.ttf">
 
-  <body>
-    <div id="box">W</div>
-    <script type="text/javascript" charset="utf-8">
-    function drawAlphabet(n,t){
-      if (n==25) return false;
-      $("#box").css("font-family", "Raleway-f" + n);
-      $("#box").css("opacity", (n * (100/12)) / 100);
-      var t = setTimeout(function(){drawAlphabet(n+1);},45)
-    }
-    $(document).ready(function(){
-      var t = setTimeout(function(){drawAlphabet(1);}, 45)
-    });
-    </script>
-  </body>
+        <script src="lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>BHAUKAL</h1>
+            <p>&nbsp;&nbsp;Animating typefaces: <span>One frame at a time</span></p>
+        </header>
+
+        <div id="frames">
+            <span style="font-family: Raleway-f1;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f2;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f3;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f4;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f5;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f6;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f7;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f8;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f9;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f10;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f11;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f12;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <span style="font-family: Raleway-f13;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+            <!-- <span style="font-family: Raleway-f14;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+                    <span style="font-family: Raleway-f15;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+                    <span style="font-family: Raleway-f16;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+                    <span style="font-family: Raleway-f17;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+                    <span style="font-family: Raleway-f18;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+                    <span style="font-family: Raleway-f19;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+                    <span style="font-family: Raleway-f20;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+                    <span style="font-family: Raleway-f21;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+                    <span style="font-family: Raleway-f22;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+                    <span style="font-family: Raleway-f23;">QWERTYUIOPASDFGHJKLZXCVBNM</span>
+                    <span style="font-family: Raleway-f24;">QWERTYUIOPASDFGHJKLZXCVBNM</span> -->
+        </div>
+
+        <div class="code">
+            <pre><code class="crayon-theme-tomorrow-night">
+                <div class="crayon-pre" style="font-size: 10px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-520deed21a45d176916627-1"><span class="crayon-t">function</span><span class="crayon-h"> </span><span class="crayon-e">drawAlphabet</span><span class="crayon-sy">(</span><span class="crayon-i">n</span><span class="crayon-sy">,</span><span class="crayon-i">t</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-2"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">n</span><span class="crayon-o">==</span><span class="crayon-cn">25</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-t">false</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-3"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">$</span><span class="crayon-sy">(</span><span class="crayon-s">"#box"</span><span class="crayon-sy">)</span><span class="crayon-sy">.</span><span class="crayon-e">css</span><span class="crayon-sy">(</span><span class="crayon-s">"font-family"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"Raleway-f"</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-i">n</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-4"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">$</span><span class="crayon-sy">(</span><span class="crayon-s">"#box"</span><span class="crayon-sy">)</span><span class="crayon-sy">.</span><span class="crayon-e">css</span><span class="crayon-sy">(</span><span class="crayon-s">"opacity"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-e ">n *</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-cn">100</span><span class="crayon-o">/</span><span class="crayon-cn">12</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-h"> </span><span class="crayon-cn">100</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-5"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">t</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">setTimeout</span><span class="crayon-sy">(</span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span><span class="crayon-e">drawAlphabet</span><span class="crayon-sy">(</span><span class="crayon-i">n</span><span class="crayon-o">+</span><span class="crayon-cn">1</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-sy">}</span><span class="crayon-sy">,</span><span class="crayon-cn">45</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-6"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-7"><span class="crayon-sy">$</span><span class="crayon-sy">(</span><span class="crayon-i">document</span><span class="crayon-sy">)</span><span class="crayon-sy">.</span><span class="crayon-e">ready</span><span class="crayon-sy">(</span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-8"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">t</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">setTimeout</span><span class="crayon-sy">(</span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span><span class="crayon-e">drawAlphabet</span><span class="crayon-sy">(</span><span class="crayon-cn">1</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-sy">}</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">45</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-9"><span class="crayon-sy">}</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div>
+<a href="javascript:void(0)" class="run">Run Code</a>
+            </code></pre>
+        </div>
+
+        <div class="demo">
+            W
+        </div>
+
+        <div class="code">
+            <pre><code class="crayon-theme-tomorrow-night">
+                <div class="crayon-pre" style="font-size: 10px !important; line-height: 15px !important;"><div class="crayon-line" id="crayon-520deed21a45d176916627-1"><span class="crayon-t">function</span><span class="crayon-h"> </span><span class="crayon-e">drawAlphabet</span><span class="crayon-sy">(</span><span class="crayon-i">n</span><span class="crayon-sy">,</span><span class="crayon-i">t</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-2"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">n</span><span class="crayon-o">==</span><span class="crayon-cn">25</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-t">false</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-3"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">$</span><span class="crayon-sy">(</span><span class="crayon-s">"#box"</span><span class="crayon-sy">)</span><span class="crayon-sy">.</span><span class="crayon-e">css</span><span class="crayon-sy">(</span><span class="crayon-s">"font-family"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"Raleway-f"</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-i">n</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-4"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">$</span><span class="crayon-sy">(</span><span class="crayon-s">"#box"</span><span class="crayon-sy">)</span><span class="crayon-sy">.</span><span class="crayon-e">css</span><span class="crayon-sy">(</span><span class="crayon-s">"opacity"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-e ">n *</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-cn">100</span><span class="crayon-o">/</span><span class="crayon-cn">12</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-h"> </span><span class="crayon-cn">100</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-5"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">t</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">setTimeout</span><span class="crayon-sy">(</span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span><span class="crayon-e">drawAlphabet</span><span class="crayon-sy">(</span><span class="crayon-i">n</span><span class="crayon-o">+</span><span class="crayon-cn">1</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-sy">}</span><span class="crayon-sy">,</span><span class="crayon-cn">45</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-6"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-7"><span class="crayon-sy">$</span><span class="crayon-sy">(</span><span class="crayon-i">document</span><span class="crayon-sy">)</span><span class="crayon-sy">.</span><span class="crayon-e">ready</span><span class="crayon-sy">(</span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-8"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">t</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-e">setTimeout</span><span class="crayon-sy">(</span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span><span class="crayon-e">drawAlphabet</span><span class="crayon-sy">(</span><span class="crayon-cn">1</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-sy">}</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">45</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-520deed21a45d176916627-9"><span class="crayon-sy">}</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div>
+            </code></pre>
+        </div>
+
+        <div class="demo">
+            CSS
+        </div>
+
+        <footer>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis gravida hendrerit. Cras at ante congue lorem rhoncus cursus a eu urna. Aliquam non odio quis elit ultrices bibendum ac ut metus. Donec gravida eros eu eros semper, ut convallis magna eleifend. Nullam et est id sapien fringilla commodo vel quis diam. Ut ut massa urna. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                <br/><br/>
+                <span>Slicing &amp; Dicing by <a href="http://twitter.com/anexasajoop/" target="_blank">Pooja</a> &amp; <a href="http://twitter.com/prtksxna/" target="_blank">Prateek</a></span>
+            </p>
+        </footer>
+
+        <script type="text/javascript" charset="utf-8">
+            function drawAlphabet(n,t){
+            if (n==25) return false;
+            $("#box").css("font-family", "Raleway-f" + n);
+            $("#box").css("opacity", (n * (100/12)) / 100);
+            var t = setTimeout(function(){drawAlphabet(n+1);},45)
+            }
+            $(document).ready(function(){
+            var t = setTimeout(function(){drawAlphabet(1);}, 45)
+            });
+        </script>
+    </body>
 </html>
