@@ -117,6 +117,7 @@ footer{
     padding: 20px;
     text-align: center;
     color: #C5C8C6;
+    border-top: 5px solid #81a2be;
 }
 
 footer span{
