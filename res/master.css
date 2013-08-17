@@ -28,11 +28,12 @@ header p{
     width: 555px;
     margin: 0 auto;
     text-transform: uppercase;
-    text-align: left;
     margin-top: -10px;
     margin-bottom: 10px;
     font-size: 20px;
     color: #8abeb7;
+    text-align: left;
+    letter-spacing: 1px;
 }
 
 header p span{
@@ -52,7 +53,8 @@ header p span{
     display: block;
     margin-left: 10px;
     margin-top: -2px;
-    font-size: 20px;
+    font-size: 34px;
+    line-height: 17px;
     color: #27292C;
 }
 
@@ -70,6 +72,9 @@ header p span{
     font-smooth: never;
     font-weight: none;
     -webkit-font-smoothing: none;
+    background-image: url("arrow.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: bottom left 45px !important;
 }
 
 .code code .crayon-pre{
@@ -117,7 +122,7 @@ footer{
     padding: 20px;
     text-align: center;
     color: #C5C8C6;
-    border-top: 5px solid #81a2be;
+    border-top: 5px solid #b294bb;
 }
 
 footer span{
