@@ -1,10 +1,10 @@
 $(document).ready(function(e){
     $("#run-first").click(function(e){
-       animateAll("#box-first", 1) 
+       animateAll("#box-first", 1);
     });
-    
+
     $("#run-second").click(function(e){
-       animateOneByOne("#box-second", "GOMTI") 
+       animateOneByOne("#box-second", "GOMTI");
     });
 });
 
@@ -15,17 +15,17 @@ animateAll = function(c,n){
     $(c).css("opacity", (n * (100/12)) / 100);
     setTimeout(function(){
         animateAll(c, n+1);
-    }, 44)
+    }, 44);
 };
 
 // Append & Animate the letter One-by-One
 animateOneByOne = function(c,t){
     as = t.split("");
     $(c).html("");
-    for(a in as){
+    for(var a in as){
         $(c).append("<span id='bh-"+a+"'>"+as[a]+"</span>");
-        $('#bh-'+a).css("opacity", 0)
-        setTimeout(animateAll, a*1000, "#bh-"+a, 1)
-        console.log(as[a])
+        $('#bh-'+a).css("opacity", 0);
+        setTimeout(animateAll, a*1000, "#bh-"+a, 1);
+        console.log(as[a]);
     }
-}
+};
